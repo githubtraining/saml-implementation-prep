@@ -64,6 +64,7 @@
 
 - [ ] Provision GitHub to all of Engineering via IdP
   - [GHEC: Script for SAML and Team Sync - active directory](https://github.com/github/saml-ldap-team-sync)
+  - [GHES: Using LDAP](https://help.github.com/en/enterprise/2.19/admin/user-management/using-ldap)
   - [Preparing to enforce SAML single sign on](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/preparing-to-enforce-saml-single-sign-on-in-your-organization)
 - [ ] Add GitHub to appropriate IdP group
 - [ ] Announcement email
