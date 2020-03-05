@@ -13,6 +13,7 @@
   - Server: For GHES we recommend using a [test/staging instance of GHES](https://help.github.com/en/enterprise/admin/installation/setting-up-a-staging-instance) as there is no enable but not enforce option so once enabled all users will need to authenticate through SAML.
 - [ ] Begin manager communication, ideally at Engineering Managers Meeting (./communication-templates/week-2-manager.md)
 - [ ] Create documentation plan for tracking information about users, admins, and bot accounts
+  - [Managing bots and service accounts with SAML single sign on](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-bots-and-service-accounts-with-saml-single-sign-on)
 
 ## Week 2
 
@@ -34,6 +35,12 @@
 ### Testing & Initial Configuration
 
 - [ ] Configure initial testing environment with identity provider
+  - [Enabling and testing SAML single sign on for your organization](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/enabling-and-testing-saml-single-sign-on-for-your-organization)
+  - [SAML attritubtes](https://help.github.com/en/enterprise/admin/user-management/using-saml#saml-attributes)
+  - LDAP
+    - [GHEC: Script for SAML and Team Sync - active directory](https://github.com/github/saml-ldap-team-sync)
+    - [GHES: Using LDAP](https://help.github.com/en/enterprise/2.19/admin/user-management/using-ldap)
+  - [GHEC Mapping SAML to GitHub IDs: Script to pull details to help cross reference](https://github.com/github/platform-samples/blob/master/graphql/queries/enterprise-sso-member-details.graphql)
 - [ ] Decide on 2FA plan
   - If you choose to configure 2FA on GitHub, [here are instructions](https://help.github.com/en/enterprise/2.20/user/github/setting-up-and-managing-organizations-and-teams/keeping-your-organization-secure)
 
@@ -63,16 +70,16 @@
 ## Week 4
 
 - [ ] Provision GitHub to all of Engineering via IdP
-  - [GHEC: Script for SAML and Team Sync - active directory](https://github.com/github/saml-ldap-team-sync)
-  - [GHES: Using LDAP](https://help.github.com/en/enterprise/2.19/admin/user-management/using-ldap)
   - [Preparing to enforce SAML single sign on](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/preparing-to-enforce-saml-single-sign-on-in-your-organization)
 - [ ] Add GitHub to appropriate IdP group
 - [ ] Announcement email
+  - GHEC Users will need to:
+    - [Authorize personal access tokens for use with SAML](https://help.github.com/en/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
+    - [Authorize SSH keys for use with SAML](https://help.github.com/en/github/authenticating-to-github/authorizing-an-ssh-key-for-use-with-saml-single-sign-on)
 
 ## Week 5
 
 - [ ] Audit for adoption
-  - [GHEC Mapping SAML to GitHub IDs: Script to pull details to help cross reference](https://github.com/github/platform-samples/blob/master/graphql/queries/enterprise-sso-member-details.graphql)
   - [GHEC: script to run via GraphQL](https://github.com/github/platform-samples/blob/master/graphql/queries/users-in-org-with-sso.graphql)
   - Server: As you click the button, you will be prompted with list of users who do not yet have it enabled, and asked if you are sure you want to enforce
 - [ ] Resolve unverified accounts
