@@ -24,3 +24,7 @@ Admins have several options to manage service accounts, including:
 This is best done by adding users to teams. This can be done automatically in some circumstances (AzureAD with team sync, or Okta to do automatically). Otherwise, users need to be added to teams in other ways.
 
 One way to do this is through the [probot/invite-contributors](https://probot.github.io/apps/invite-contributors/) app.
+
+## Does Azure AD team sync allow for syncing of groups and subgroups?
+
+Syncing, yes. Unsure about subgroups/teams.
