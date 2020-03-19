@@ -27,4 +27,4 @@ One way to do this is through the [probot/invite-contributors](https://probot.gi
 
 ## Does Azure AD team sync allow for syncing of groups and subgroups?
 
-Syncing, yes. Team Syc will flatten membership of subgroups. 
+Syncing, yes. Team sync will flatten membership of subgroups. 
