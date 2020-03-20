@@ -28,3 +28,13 @@ One way to do this is through the [probot/invite-contributors](https://probot.gi
 ## Does Azure AD team sync allow for syncing of groups and subgroups?
 
 Syncing, yes. Team sync will flatten membership of subgroups. 
+
+## Session time out
+
+### What are the minimums and maximums for session length? Do we honor them on GHEC and GHES?
+
+There is no enforced session minimum or maximum. We support SessionNotOnOrAfter attribute to set session lengths via the IdP.
+
+### What if the IdP doesn't support a setting to enforce session length?
+
+Use the 24 hour default, reach out to the IdP to make that request.

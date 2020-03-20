@@ -89,7 +89,7 @@
 
 - [ ] Wrap up communication
 - [ ] ­Rollout / SSO Required in GitHub
-  - Users not authed via Okta will automatically removed from of the Org and will need to auth via Okta and be manually added to the Dev Team
+  - Users not authed via Okta will automatically removed from of the Org and will need to auth via Okta and be manually added to the Dev Team. You can find [instructions here](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/reinstating-a-former-member-of-your-organization).
   - [Enforcing SAML](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/enforcing-saml-single-sign-on-for-your-organization)
 - [ ] Response team available for immediate auth needs
 
