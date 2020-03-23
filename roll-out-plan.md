@@ -23,8 +23,10 @@
   - [GHEC Script: Find inactive users](https://github.com/github/platform-samples/tree/master/api/ruby/find-inactive-members)
 - [ ] Audit Admins who don’t need to be admins
   - Manually look through admin permissions. Make note of anything that goes against expectations. Follow up and communicate to see why this is necessary.
+  - [Script: GHE org permissions report](https://github.com/github/platform-samples/blob/master/api/ruby/ghe-org-permissions-report.rb)
 - [ ] Audit Bots to be marked as outside collaborators
   - This is done primarily through communication
+  - On GHEC, you can see outside collaborators through the outside_collaborators tab: `https://github.com/enterprises/<enterprise>/outside_collaborators`
 - [ ] Choose a plan for bots/service accounts. 
   - [Help: Managing bots and service accounts with SAML single sign on](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-bots-and-service-accounts-with-saml-single-sign-on)
   - Options include:
@@ -88,7 +90,7 @@
 ## Week 6
 
 - [ ] Wrap up communication
-- [ ] ­Rollout / SSO Required in GitHub
+- [ ] Rollout / SSO Required in GitHub
   - Users not authed via Okta will automatically removed from of the Org and will need to auth via Okta and be manually added to the Dev Team. You can find [instructions here](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/reinstating-a-former-member-of-your-organization).
   - [Enforcing SAML](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/enforcing-saml-single-sign-on-for-your-organization)
 - [ ] Response team available for immediate auth needs
