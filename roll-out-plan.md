@@ -35,6 +35,7 @@
   - Options include:
     - [Adding service accounts as outside collaborators](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/adding-outside-collaborators-to-repositories-in-your-organization)
     - Create a separate organization that isn't SAML enforced (GHEC only)
+      - Repositories can be forked into this organization and marked as `Internal`.
     - [Allow built in authentication for users outside of your identity provider](https://docs.github.com/en/enterprise/2.22/admin/authentication/allowing-built-in-authentication-for-users-outside-your-identity-provider) (GHES only)
 
 ### Testing & Initial Configuration
