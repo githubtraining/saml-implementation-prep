@@ -42,10 +42,9 @@
 
 - [ ] Configure initial testing environment with identity provider
   - [Enabling and testing SAML single sign on for your organization](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/enabling-and-testing-saml-single-sign-on-for-your-organization)
-  - **GHES**: [SAML attritubtes](https://docs.github.com/en/enterprise/2.22/admin/authentication/using-saml#saml-attributes)
-  - LDAP
-    - [GHEC: Script for SAML and Team Sync - active directory](https://github.com/github/saml-ldap-team-sync)
-    - [GHES: Using LDAP](https://help.github.com/en/enterprise/2.19/admin/user-management/using-ldap)
+  - **GHES**: 
+    - [SAML attritubtes](https://docs.github.com/en/enterprise/2.22/admin/authentication/using-saml#saml-attributes)
+    - If you are migrating from LDAP to SAML and would like to continue using Team Sync with SAML, we have this open-source utility:[GHEC: Script for SAML and Team Sync - active directory](https://github.com/github/saml-ldap-team-sync)
   - [GHEC Mapping SAML to GitHub IDs: Script to pull details to help cross reference](https://github.com/github/platform-samples/blob/master/graphql/queries/enterprise-sso-member-details.graphql)
 - [ ] Decide on 2FA plan
   - If you choose to configure 2FA on GitHub, here are [instructions](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/keeping-your-organization-secure)
